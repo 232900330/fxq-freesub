@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 144.225.65.173
+  port: 29199
+  udp: true
+  type: vmess
+  uuid: de2afab2-344b-413f-93a9-5e62c8e219d5
+  alterId: 0
+  cipher: auto
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 156.67.63.231
   port: 443
   udp: true
@@ -16,19 +27,26 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 107.161.174.26
-  port: 443
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: config-turkey.zelnora.ir
+  port: 2296
+  udp: true
+  type: vmess
+  uuid: e4bbe685-a287-4a59-8dbc-02c18b1265df
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: config-turkey.zelnora.ir
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: turkyea.vanguardia.ir
+  port: 37446
   udp: true
   type: vless
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-  servername: books.blackbigdog.com
-  client-fingerprint: chrome
+  uuid: 960e6852-9d2b-48bb-b1cf-5cb27ec27473
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
 rules:
 - MATCH,PROXIES
