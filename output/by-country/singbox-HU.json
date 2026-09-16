@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "141.227.137.177",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tag": "🇭🇺 匈牙利 (Hungary) 01 - xiaohe",
+      "server": "172.67.67.178",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "kkkk-xcd.pages.dev"
+          "Host": "rayan-007.nastaran.dpdns.org"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
