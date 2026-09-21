@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 206.251.53.91
-  port: 8443
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -16,7 +16,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /settings?ed=2560fp=chrome
+    path: /collect/user/products?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
