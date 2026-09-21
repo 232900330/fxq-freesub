@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.46.46",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "104.18.42.54",
+      "server_port": 2096,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "vip.868068.xyz"
         }
       }
     },
