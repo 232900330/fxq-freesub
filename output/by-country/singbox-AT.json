@@ -14,22 +14,9 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "g2.haxat.bestvbest.ir",
-      "server_port": 20610,
-      "uuid": "8ec5d86b-d895-477d-bc96-21fa01049f2f",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn-apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI",
-          "short_id": "1d1a8f9fefeff5e6"
-        }
-      }
+      "server": "31.56.222.61",
+      "server_port": 17852,
+      "uuid": "79251d3c-aabc-475c-b598-67263479b382"
     },
     {
       "type": "selector",
