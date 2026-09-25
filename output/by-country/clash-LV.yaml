@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
-  port: 9036
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 185.135.86.175
   port: 9017
@@ -20,11 +20,11 @@ proxies:
   password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 185.135.86.175
-  port: 9034
+  port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  password: hbtvgUz5uNYyB3Rf
 proxy-groups:
 - name: PROXIES
   type: select

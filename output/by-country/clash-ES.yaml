@@ -25,11 +25,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 31.56.222.61
-  port: 45286
+  server: mygptagent.org
+  port: 443
   udp: true
-  type: vless
-  uuid: 79251d3c-aabc-475c-b598-67263479b382
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
 proxy-groups:
 - name: PROXIES
   type: select

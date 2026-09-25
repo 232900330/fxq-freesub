@@ -32,11 +32,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "31.56.222.61",
-      "server_port": 45286,
-      "uuid": "79251d3c-aabc-475c-b598-67263479b382"
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
+      }
     },
     {
       "type": "selector",
