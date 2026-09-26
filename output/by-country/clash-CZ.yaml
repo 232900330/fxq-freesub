@@ -5,17 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 13.143.181.220
-  port: 443
+  server: 194.87.59.26
+  port: 2085
   udp: true
   type: vless
-  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
-  servername: msk1.maxtelemost.com
-  client-fingerprint: safari
+  uuid: 720814fb-e38e-4570-97a7-c5df60352d37
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
