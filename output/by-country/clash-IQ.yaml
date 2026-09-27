@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
-  server: 104.25.155.45
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.91.50
   port: 443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  uuid: 3e43ffd1-3f7b-45b0-a955-c249010c7ebc
   tls: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  servername: Open-39.AVL-a47261.WorKErS.DeV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    path: /vl/9Vd7GxzImsNPSKUT9uIK0uYIARIV?ed=2560
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+      Host: open-39.avl-a47261.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
