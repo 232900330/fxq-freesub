@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.18.34.21",
-      "server_port": 8443,
-      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tag": "🇭🇺 匈牙利 (Hungary) 01 - xiaohe",
+      "server": "45.9.168.211",
+      "server_port": 443,
+      "uuid": "7de5e70d-b95e-4019-affb-636151647b52",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "socks5.revil-time3.workers.dev",
-        "insecure": false,
+        "server_name": "mzone.hu.3cloudhost.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/socks5://128.140.46.169:13482",
-        "headers": {
-          "Host": "socks5.revil-time3.workers.dev"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
+          "short_id": ""
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

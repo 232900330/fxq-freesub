@@ -19,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
@@ -31,7 +31,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
+        "server_name": "off",
         "insecure": true
       }
     },
@@ -55,18 +55,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
-      "server": "85.237.207.49",
-      "server_port": 50160,
-      "password": "a56619e2bed91121eabb97d20be207c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "85-237-207-49.liao.kdns.fr",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -74,8 +62,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ]
     },
     {
@@ -85,8 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
