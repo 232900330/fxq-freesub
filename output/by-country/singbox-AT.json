@@ -12,18 +12,43 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "server": "159.195.253.15",
+      "server_port": 8443,
+      "uuid": "bc221702-dd43-4642-a203-24d8d6a81165",
+      "tls": {
+        "enabled": true,
+        "server_name": "au1.pad-sservice.lat",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au1",
+        "headers": {
+          "Host": "au1.pad-service.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
