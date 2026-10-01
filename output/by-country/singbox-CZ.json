@@ -4,20 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.163",
-      "server_port": 3090,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "153.76.185.162",
+      "server": "153.76.185.163",
       "server_port": 3090,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
       "transport": {
@@ -39,6 +54,61 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
+      "server": "153.76.185.162",
+      "server_port": 3090,
+      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
+      "server": "153.76.185.159",
+      "server_port": 3090,
+      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 06 - xiaohe",
+      "server": "153.76.185.108",
+      "server_port": 3090,
+      "uuid": "14e227c3-5a83-4b4d-a41a-e5f499c79415",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 07 - xiaohe",
+      "server": "194.87.59.20",
+      "server_port": 2085,
+      "uuid": "a641fd38-0ad7-40bf-9a56-6715c1787be3",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 08 - xiaohe",
+      "server": "194.87.59.5",
+      "server_port": 2085,
+      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 09 - xiaohe",
       "server": "195.133.66.229",
       "server_port": 443,
       "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
@@ -47,7 +117,7 @@
         "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -62,7 +132,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 10 - xiaohe",
       "server": "nlll.gaz-service.shop",
       "server_port": 8443,
       "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
@@ -90,7 +160,12 @@
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
         "🇨🇿 捷克 (Czech) 03 - xiaohe",
         "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 05 - xiaohe",
+        "🇨🇿 捷克 (Czech) 06 - xiaohe",
+        "🇨🇿 捷克 (Czech) 07 - xiaohe",
+        "🇨🇿 捷克 (Czech) 08 - xiaohe",
+        "🇨🇿 捷克 (Czech) 09 - xiaohe",
+        "🇨🇿 捷克 (Czech) 10 - xiaohe"
       ]
     },
     {
@@ -101,7 +176,12 @@
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
         "🇨🇿 捷克 (Czech) 03 - xiaohe",
         "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 05 - xiaohe",
+        "🇨🇿 捷克 (Czech) 06 - xiaohe",
+        "🇨🇿 捷克 (Czech) 07 - xiaohe",
+        "🇨🇿 捷克 (Czech) 08 - xiaohe",
+        "🇨🇿 捷克 (Czech) 09 - xiaohe",
+        "🇨🇿 捷克 (Czech) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
