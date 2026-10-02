@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: proxy3.h1guro.ovh
+  server: 95.85.253.202
   port: 443
   udp: true
   type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo
-    short-id: 25934afbedc65791
-  servername: proxy3d.h1guro.ovh
-  client-fingerprint: firefox
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: pl0001.kubservice.icu
+  client-fingerprint: qq
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 202.78.163.237
   port: 443
@@ -26,85 +25,19 @@ proxies:
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 188.114.96.19
-  port: 80
+  server: 31.77.59.107
+  port: 443
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: pl193.mech-pro.online
+  client-fingerprint: qq
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 93.188.185.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: orm.g4m1.biz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.PlService
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 149.86.227.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 188.225.79.44
   port: 443
   udp: true
@@ -117,6 +50,33 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: eh.vk.ru
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 144.31.4.193
+  port: 444
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,9 +88,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,8 +99,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
