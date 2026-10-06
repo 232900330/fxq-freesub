@@ -5,28 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 90.156.203.62
-  port: 5112
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 91.196.32.163
+  server: 45.9.118.101
   port: 443
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: 91.196.32.163
-  skip-cert-verify: true
+  type: vless
+  uuid: 44730b65-24d5-45f2-8b45-8be24015d1b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: srv-17e124.21freedom.net
-  port: 11592
+  server: 194.38.11.86
+  port: 65443
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: PROXIES
   type: select
