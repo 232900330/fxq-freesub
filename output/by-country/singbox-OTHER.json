@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "113.30.152.2",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.17.148.44",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "uuid": "489f1717-d3c7-4940-ad68-bdbdbab857f4",
       "tls": {
         "enabled": true,
-        "server_name": "be-root.sworkingvpn.com",
+        "server_name": "x.m-90.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w",
-          "short_id": "15bcc0a77c3cacdf"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "t.me/TEAMNETGRATISCOL",
+        "headers": {
+          "Host": "x.m-90.xyz"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,13 +13,13 @@ proxies:
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 34.242.77.118
+  server: sacred-anemone.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   server: 3.255.76.207
   port: 443
