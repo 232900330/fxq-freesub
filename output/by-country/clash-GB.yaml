@@ -5,52 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 16.60.8.87
+  server: 13.135.102.116
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 35.179.134.0
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: 149.102.132.184
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  server: 45.141.118.213
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 149.102.132.184
   port: 443
   udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga16.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 51.77.225.200
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   server: 23.81.34.204
   port: 443
   udp: true
@@ -63,7 +52,46 @@ proxies:
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  server: 45.141.118.49
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: lagad17.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
+  server: 206.245.166.173
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: laga19.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+  server: 186.190.211.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   server: 206.245.166.203
   port: 443
   udp: true
@@ -74,50 +102,25 @@ proxies:
   servername: laga20.api3-max.ru
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  server: 186.190.211.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
-  server: laga18.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga18.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
-  server: lagad17.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lagad17.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
-  server: laga19.api3-max.ru
+  server: 45.141.118.213
   port: 443
   udp: true
   type: vless
   uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   flow: xtls-rprx-vision
   tls: true
-  servername: laga19.api3-max.ru
+  servername: laga16.api3-max.ru
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -128,21 +131,19 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
-  server: 109.248.169.195
-  port: 43000
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  server: laga18.api3-max.ru
+  port: 443
   udp: true
   type: vless
-  uuid: caed9423-a900-4704-9045-d207a8d4697b
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
-    short-id: 445b41ed
-  servername: 109.248.169.195
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  servername: laga18.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -154,20 +155,6 @@ proxies:
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  server: 185.223.252.175
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  tls: true
-  servername: rnxq-1lpi3m.linmeisoft.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
 - name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   server: webdisk.jaggyslawa.org
   port: 443
@@ -194,6 +181,19 @@ proxies:
     short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
+  server: 109.248.169.195
+  port: 43000
+  udp: true
+  type: vless
+  uuid: caed9423-a900-4704-9045-d207a8d4697b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
+    short-id: 445b41ed
+  servername: 109.248.169.195
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -217,6 +217,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -240,5 +241,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
 rules:
 - MATCH,PROXIES
