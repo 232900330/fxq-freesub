@@ -5,13 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 109.206.241.10
-  port: 449
+  server: ee-1-1.unturned-rust-dead.lol
+  port: 443
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  servername: ee-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ee-grpc
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 143.246.41.31
   port: 443
@@ -26,19 +32,13 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: ee-1-1.unturned-rust-dead.lol
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: ees92.shhflow.xyz
   port: 5443

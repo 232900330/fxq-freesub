@@ -4,15 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "ee-1-1.unturned-rust-dead.lol",
+      "server_port": 443,
+      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
+        "server_name": "ee-1-1.unturned-rust-dead.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ee-grpc"
       }
     },
     {
@@ -37,27 +49,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "ee-1-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "ee-1-1.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ee-grpc"
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
       }
     },
     {
