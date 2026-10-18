@@ -6,39 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -53,13 +20,95 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+      "server": "138.124.63.224",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+      "server": "ch.srv.vbuste.ru",
+      "server_port": 444,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe"
       ]
     },
     {
@@ -68,7 +117,9 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
