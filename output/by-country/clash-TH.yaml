@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 104.17.73.206
-  port: 8443
+- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: 104.18.26.90
+  port: 443
   udp: true
   type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   tls: true
-  servername: free.sahanwickramasinghe.me
+  servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
 rules:
 - MATCH,PROXIES
