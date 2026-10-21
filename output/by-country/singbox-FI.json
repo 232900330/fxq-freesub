@@ -30,18 +30,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "213.176.92.168",
+      "server_port": 10444,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

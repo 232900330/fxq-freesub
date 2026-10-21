@@ -19,17 +19,32 @@ proxies:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 213.176.92.168
+  port: 10444
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES

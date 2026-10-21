@@ -32,36 +32,6 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 57.129.130.63
-  port: 52014
-  udp: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 84.22.150.39
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +40,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +48,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
