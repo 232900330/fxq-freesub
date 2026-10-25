@@ -4,26 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 194.36.37.59
-  port: 10004
+- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: 103.86.49.57
+  port: 80
   udp: true
   type: vless
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
 rules:
 - MATCH,PROXIES
