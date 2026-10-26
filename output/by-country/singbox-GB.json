@@ -14,73 +14,100 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "server": "146.70.61.18",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
+      "server": "51.89.228.166",
+      "server_port": 8443,
+      "uuid": "680e92ac-1688-49e0-af96-7327fbc30ce8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+      "server": "51.89.225.90",
+      "server_port": 8443,
+      "uuid": "680e92ac-1688-49e0-af96-7327fbc30ce8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "ozon.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
-      "server": "177.202.111.18",
-      "server_port": 56137,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
       "server": "146.70.46.214",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
       "server": "sql.popmintxo.cc",
       "server_port": 43385,
       "method": "chacha20-ietf-poly1305",
@@ -88,7 +115,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
       "server": "191.44.108.31",
       "server_port": 443,
       "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
@@ -98,32 +125,12 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU",
           "short_id": "3ba10d9ce34380c9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
         }
       }
     },
@@ -144,21 +151,12 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
-      "server": "51.38.71.147",
-      "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "213.176.92.168",
+      "server_port": 14430,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
       "transport": {
         "type": "ws",
-        "path": "/cdn-cgi/ws"
+        "path": "/vless"
       }
     },
     {
@@ -171,6 +169,27 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 14 - xiaohe",
+      "server": "213.176.92.168",
+      "server_port": 10444,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - xiaohe",
       "server": "46.250.240.80",
       "server_port": 2053,
       "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
@@ -190,7 +209,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - xiaohe",
       "server": "uk1.connectsuite.org",
       "server_port": 443,
       "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
@@ -206,18 +225,6 @@
       "transport": {
         "type": "ws",
         "path": "/cdn-cgi/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - xiaohe",
-      "server": "node-uk.connectsuite.org",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": false
       }
     },
     {
@@ -250,6 +257,14 @@
       "password": "RexnBgU7EV5ADxG"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - xiaohe",
+      "server": "37.153.158.229",
+      "server_port": 56137,
+      "method": "chacha20-ietf-poly1305",
+      "password": "uvKNudV-N8AUCrykPiyznA"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -271,7 +286,8 @@
         "🇬🇧 英国 (United Kingdom) 15 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 16 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 17 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 18 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 18 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 19 - xiaohe"
       ]
     },
     {
@@ -295,7 +311,8 @@
         "🇬🇧 英国 (United Kingdom) 15 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 16 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 17 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 18 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 18 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 19 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
