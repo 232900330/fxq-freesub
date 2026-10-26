@@ -5,13 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe",
-      "server": "80.243.228.84",
-      "server_port": 2085,
-      "uuid": "a7c66f66-76b7-42ea-8d2b-890a37239368",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "8.35.211.242",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -19,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
