@@ -23,9 +23,9 @@ proxies:
     public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
     short-id: 16036bbef04d0509
   servername: twitch.tv
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: swz.proxyplankton.ru
+  server: 149.33.15.213
   port: 443
   udp: true
   type: vless
@@ -33,7 +33,27 @@ proxies:
   tls: true
   servername: swz.proxyplankton.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +62,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +72,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
