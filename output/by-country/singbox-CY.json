@@ -4,8 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+      "server": "171.22.119.74",
+      "server_port": 8447,
+      "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
       "server": "171.22.119.74",
       "server_port": 8446,
       "password": "Pass-Client-1",
@@ -18,13 +25,6 @@
         "type": "grpc",
         "service_name": "grpc-video-call"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-      "server": "171.22.119.74",
-      "server_port": 8447,
-      "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
     },
     {
       "type": "hysteria2",
