@@ -6,21 +6,22 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "5.253.29.253",
-      "server_port": 443,
-      "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
+      "server": "5.253.28.240",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "indi.qikbro.com",
-        "insecure": false,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "assets"
       }
     },
     {
