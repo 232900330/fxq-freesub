@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -28,6 +28,14 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 139.84.132.62
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: 139.84.132.62
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: in002.zestapp778.com
   port: 46362
   udp: true
@@ -36,14 +44,6 @@ proxies:
   tls: true
   servername: in002.zestapp778.com
   skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 139.84.132.62
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
