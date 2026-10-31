@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - xiaohe",
-      "server": "122.176.216.52",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.192.53",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "path": "/assignment",
         "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
