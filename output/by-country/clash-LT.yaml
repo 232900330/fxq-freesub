@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: lorettmay.top
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /blog/posts
