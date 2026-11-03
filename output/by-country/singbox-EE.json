@@ -1,0 +1,53 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "185.4.115.146",
+      "server_port": 1355,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+      "server": "141.0.187.15",
+      "server_port": 443,
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
+      "tls": {
+        "enabled": true,
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
