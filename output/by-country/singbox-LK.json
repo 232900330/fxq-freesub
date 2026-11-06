@@ -5,25 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-      "server": "81.208.170.142",
-      "server_port": 1500,
-      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "server": "141.193.213.20",
+      "server_port": 2087,
+      "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "free.vkehi.store",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
-          "short_id": "775eb6408888248e"
+          "fingerprint": "android"
         }
       },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.vkehi.store"
+        }
       }
     },
     {
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

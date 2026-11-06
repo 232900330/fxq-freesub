@@ -1,0 +1,47 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: falmero.store
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
+  tls: true
+  servername: falmero.store
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de1.v1
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+rules:
+- MATCH,PROXIES
