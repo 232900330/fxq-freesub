@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 208.103.161.16
+  port: 2096
+  udp: true
+  type: trojan
+  password: hWsj5AwIRPF8
+  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 179.253.82.47
+  port: 4444
+  udp: true
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,30 +34,8 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 129.6.29.252
-  port: 80
-  udp: true
-  type: vmess
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 104.24.0.1
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan
