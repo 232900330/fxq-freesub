@@ -4,15 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "216.238.104.154",
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "104.17.3.81",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "server_name": "natan.srpcom.cloud",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "natan.srpcom.cloud"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
