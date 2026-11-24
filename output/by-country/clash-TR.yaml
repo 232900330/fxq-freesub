@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: cadrin.wtf
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: cache.sync.v1
