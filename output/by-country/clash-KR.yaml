@@ -13,13 +13,21 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 49.254.204.133
-  port: 1774
+  server: 211.178.105.134
+  port: 6123
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 1234!@#$
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -27,22 +35,15 @@ proxies:
   password: maintell
   sni: 152.70.237.123
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: 152.67.200.82
-  port: 50160
+  server: 152.69.226.63
+  port: 25555
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   server: 152.69.231.175
   port: 50160
@@ -52,29 +53,26 @@ proxies:
   sni: 152.69.231.175
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: 152.69.226.63
-  port: 25555
+  server: 132.145.80.230
+  port: 80
   udp: true
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: 152.69.226.63
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  server: dddz-4-z.473221.xyz
-  port: 43118
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: vless
-  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: p0crO-ZNRjb07T_GGy9JdkXTjei3-D9f6s2ZzCo2gx8
-    short-id: 1a70fe8d4b05
-  servername: v1-dy.ixigua.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152-67-200-82.liao.kdns.fr
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
