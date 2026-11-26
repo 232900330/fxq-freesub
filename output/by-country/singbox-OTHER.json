@@ -5,18 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "38.107.234.57",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.27.97.42",
       "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
       "tls": {
         "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": true
+        "server_name": "free.sahanwickramasinghe.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vless/"
+        "headers": {
+          "Host": "free.sahanwickramasinghe.com"
+        }
       }
     },
     {
@@ -24,14 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
