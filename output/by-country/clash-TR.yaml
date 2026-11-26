@@ -5,31 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 172.64.155.209
-  port: 443
+  server: v2new.nimbaha9.ir
+  port: 8080
   udp: true
   type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  tls: true
-  servername: sinavm3.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /XDS45
     headers:
-      Host: sinavm3.soft10.ir
+      Host: v2new.nimbaha9.ir
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 143.246.136.128
+  port: 50738
+  udp: true
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
